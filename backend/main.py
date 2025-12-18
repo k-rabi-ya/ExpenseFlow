@@ -151,7 +151,9 @@ async def record_correction(data: dict):
     # TODO: Save correction to database and schedule retraining
     return {"status": "recorded", "retraining_scheduled": "tonight"}
 
-
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=5001)
+    import os
+
+    port = int(os.environ.get("PORT", 5000))  # Use Render's PORT, fallback to 5000 locally
+    uvicorn.run(app, host="0.0.0.0", port=port)
