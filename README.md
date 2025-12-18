@@ -118,7 +118,7 @@ ExpenseFlow uses a **Logistic Regression** model with **TF-IDF (Term Frequency-I
 
 ```bash
 cd backend
-python scripts/train_model.py --dataset data/transactions.csv --output models/classifier.pkl
+python scripts/train_model.py --dataset data/sample_transactions.csv --output models
 ```
 
 This will:
