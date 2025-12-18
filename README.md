@@ -109,7 +109,7 @@ ExpenseFlow uses a **Logistic Regression** model with **TF-IDF (Term Frequency-I
    ```
 
 5. **Start the application**:
-   - Backend: `python app.py` (runs on http://localhost:5000)
+   - Backend: `python main.py` (runs on http://localhost:5001)
    - Frontend: `npm run dev` (runs on http://localhost:3000)
 
 ## 📊 Training & Evaluation
