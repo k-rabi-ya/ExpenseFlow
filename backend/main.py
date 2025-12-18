@@ -58,6 +58,18 @@ class BatchCategorizeResponse(BaseModel):
     results: List[CategorizationResponse]
 
 
+# Root endpoint
+@app.get("/")
+async def read_root():
+    """Root endpoint for health checks"""
+    return {
+        "message": "API is running",
+        "service": "ExpenseFlow",
+        "status": "ok",
+        "model_loaded": categorization_service.model_loaded
+    }
+
+
 # Health check endpoint
 @app.get("/health")
 async def health_check():
