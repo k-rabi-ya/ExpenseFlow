@@ -1,8 +1,6 @@
-# ExpenseFlow
-
 **ExpenseFlow** is a minimalist web/mobile application designed for freelancers, small business owners, or anyone managing high transaction volumes. Its core value proposition is **zero-effort expense categorization** via automated text analysis and optional receipt scanning.
 
-## 🎯 Problem Statement & Solution
+Problem Statement & Solution
 
 **The Challenge**: Users manually categorize expenses, a tedious and error-prone process that leads to incomplete spending insights.
 
@@ -12,67 +10,7 @@
 - **Learning from Feedback**: Correct misclassified transactions, and the system learns and improves over time
 - **Custom Categories**: Define personal or business-specific categories
 
-## 🤖 Machine Learning Approach
-
-ExpenseFlow uses a **Logistic Regression** model with **TF-IDF (Term Frequency-Inverse Document Frequency)** feature extraction for fast, accurate, offline categorization. The model:
-- Trains on labeled transaction data
-- Provides confidence scores for predictions
-- Supports user feedback-driven retraining (nightly fine-tuning)
-- Runs entirely offline for privacy and speed
-
-## 💻 Technology Stack
-
-| Layer | Technology | Rationale |
-|-------|-----------|-----------|
-| **Frontend** | Next.js / React | Fast, modern, component-based UI with excellent tooling |
-| **Backend / API** | FastAPI or Flask | Lightweight Python server; seamless ML integration |
-| **Database** | PostgreSQL | Reliable, robust storage for users, transactions, and custom categories |
-| **ML/Data Science** | Python, pandas, scikit-learn, joblib | Simple, high-performance classical ML for categorization |
-| **OCR** | Google Vision API / Tesseract | Extract text and amounts from receipt images |
-| **Deployment** | Vercel (Frontend) + Digital Ocean / AWS Lightsail (Backend) | Cost-effective, scalable cloud hosting |
-
-## ✨ Core Features
-
-| Feature | User Value | Implementation |
-|---------|------------|-----------------|
-| **Instant Text Categorization** | Automatically assign categories to imported bank statements (CSV/OFX) | Logistic Regression + TF-IDF Model |
-| **Receipt OCR & Categorization** | Upload receipt photos; extract and auto-categorize | OCR API → ML Model |
-| **Correction & Retraining** | Correct misclassifications; system learns nightly | Database logging + scheduled Python script |
-| **Custom Categories** | Define personal/business-specific categories | Database flexibility |
-| **Export to Sheets** | Export categorized transactions to Google Sheets / Excel | API integration |
-
-## 🗺️ Launch Roadmap
-
-| Phase | Timeline | Focus | Deliverable |
-|-------|----------|-------|-------------|
-| **V1.0 (MVP)** | Weeks 1–4 | Core ML & API | REST API with text categorization. Simple web dashboard for CSV import and transaction table. |
-| **V1.1 (Early Access)** | Weeks 5–8 | User Feedback Loop | Category correction UI. Nightly retraining script for user corrections. |
-| **V1.5 (Feature Expansion)** | Weeks 9–12 | Receipt OCR | Receipt upload & image processing. OCR API integration. |
-| **V2.0 (Full Launch)** | Weeks 13–16 | Mobile & Scale | React Native mobile app. Production deployment. Marketing launch. |
-
-## 🎨 UI/UX Design Principles
-
-### 1. Dashboard & Status
-**Goal**: Clarity and immediate action.
-- Clean, minimalist card layout
-- Key stats: "Uncategorized Transactions," "Total Expenses This Month"
-- Prominent "Import Transactions" button + drag-and-drop area for CSV/receipt images
-
-### 2. Transaction List (Core View)
-**Goal**: Effortless review and correction.
-- Table view with visual status indicators:
-  - **Green**: Auto-categorized (high confidence)
-  - **Yellow**: Auto-categorized (low confidence)
-  - **Red**: Uncategorized (awaiting input)
-  - **Blue star**: User-corrected (learning from feedback)
-- Single-click category editing for quick corrections
-
-### 3. Onboarding & Training
-**Goal**: Gather initial labeled data for new users.
-- Guided setup: manually categorize 10–20 sample transactions from first import
-- Ensures model learns user's specific spending habits immediately
-
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### Prerequisites
 - Python 3.9+
