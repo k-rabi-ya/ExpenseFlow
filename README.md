@@ -110,7 +110,7 @@ Response: { "processed": 150, "categorized": 145, "uncategorized": 5 }
 POST /api/ocr-categorize
 multipart/form-data
 - image: receipt.jpg
-Response: { "merchant": "Starbucks", "amount": 5.50, "category": "Food", "confidence": 0.89 }
+Response: { "merchant": "Cafe", "amount": 5.50, "category": "Food", "confidence": 0.89 }
 ```
 
 ### Record Correction (Feedback Loop)
