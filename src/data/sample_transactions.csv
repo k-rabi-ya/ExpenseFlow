@@ -1,0 +1,37 @@
+description,category
+Whole Foods Market,Food
+Trader Joe's,Food
+McDonald's burger,Food
+Starbucks coffee,Food
+Chipotle meal,Food
+Pizza Hut delivery,Food
+Uber car service,Transport
+Lyft ride,Transport
+Shell gas station,Transport
+Delta airline ticket,Transport
+NYC subway card,Transport
+Parking meter,Transport
+Con Edison electric,Bills
+Verizon phone bill,Bills
+Charter internet,Bills
+Water utility bill,Bills
+Amazon purchase,Shopping
+Target store,Shopping
+Walmart shopping,Shopping
+Best Buy electronics,Shopping
+Nike shoes,Shopping
+H&M clothing,Shopping
+Netflix subscription,Entertainment
+Spotify music,Entertainment
+Disney+ streaming,Entertainment
+Movie theater tickets,Entertainment
+Concert tickets,Entertainment
+Gym membership,Health
+CVS pharmacy,Health
+Walgreens medicine,Health
+Doctor visit copay,Health
+Dental cleaning,Health
+Staples office supplies,Work Supplies
+Amazon business supplies,Work Supplies
+FedEx shipping,Work Supplies
+Zoom subscription,Work Supplies
